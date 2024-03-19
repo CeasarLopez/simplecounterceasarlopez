@@ -31,11 +31,11 @@ SimpleCounter.propTypes = {
 };
 let counter = 0;
 setInterval(function(){
-    const five = math.floor(counter/10000)
-    const four = math.floor(counter/1000)
-    const three = math.floor(counter/100)
-    const two = math.floor(counter/10)
-    const one = math.floor(counter/1)
+    const five = Math.floor(counter/10000 % 10)
+    const four = Math.floor(counter/1000 % 10)
+    const three = Math.floor(counter/100 % 10)
+    const two = Math.floor(counter/10 % 10)
+    const one = Math.floor(counter/1 % 10)
     console.log(five, four,three, two, one)
 
     counter++;
